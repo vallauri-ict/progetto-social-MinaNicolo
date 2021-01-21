@@ -1,0 +1,172 @@
+[
+   {
+      "codCorso":"c01",
+      "descrizione":"Cucina&co nasce dalla passione per la buona cucina e dal desiderio di dare ai propri clienti la perfezione nell'arte del ricevere. La grande qualità, l'amore per il bello, la cura dei dettagli, anche quelli piccoli e la personalizzazione di ogni evento, rappresentano il modo in cui mettiamo a vostra completa disposizione le nostre competenze ed il nostro entusiasmo.",
+      "author":"a04",
+      "categoria":"cucina",
+      "nome":"italiana",
+      "nIscritti":38,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Pizza fatta con l'utilizzo di soli ingredienti naturali.",
+	    "descrizioneVideo":"Ricetta originale della carbonara",
+            "dataPost":{"$date":"2013-09-27T15:03:00Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2009-09-01T19:02:30Z"},
+      "like":45
+   },
+   {
+      "codCorso":"c02",
+      "descrizione":"C# è un linguaggio di programmazione orientato agli oggetti sviluppato da Microsoft. In questo corso troverete opportunità di Formazione Professionale nell'ambito dell'informatica e programmazione con attestato finale.",
+      "author":"a06",
+      "categoria":"informatica",
+      "nome":"c#",
+      "nIscritti":60,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Logo classico di c#, attraverso questo linguaggio possiamo anche simulare un'intelligenza artificiale tramite, ad esempio, dei threads.",
+	    "descrizioneVideo":"Prima lezione c#: Introduzione e setup ambiente di lavoro",
+            "dataPost":{"$date":"2016-03-04T12:03:40Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2015-09-12T10:20:50Z"},
+      "like":78
+   },
+   {
+      "codCorso":"c03",
+      "descrizione":"Il corso ha l’obiettivo di formare istruttori in grado di gestire ed allenare efficacemente e in autonomia una classe eterogenea, attraverso il corretto utilizzo della musica, dei piccoli attrezzi e a corpo libero. Nello specifico il corso dona le basi per la corretta costruzione e conduzione della lezione di tonificazione e coreografia di base.",
+      "author":"a02",
+      "categoria":"sport",
+      "nome":"palestra",
+      "nIscritti":84,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Allenamento coi pesi utile per il rafforzamento delle braccia.",
+            "descrizioneVideo":"Esercizi di riscaldamento muscolare per il corpo",
+            "dataPost":{"$date":"2014-09-01T18:30:20Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2012-13-01T20:30:00Z"},
+      "like":65
+   },
+   {
+      "codCorso":"c04",
+      "descrizione":"In questo corso troverai video, applicazioni, podcast per dispositivi mobili, giochi, storie, attività audio ed esercizi di grammatica. Tutte queste attività sono state attentamente preparate dai nostri professionisti della formazione ed esperti nell'insegnamento dell'inglese.",
+      "author":"a08",
+      "categoria":"lingue",
+      "nome":"inglese",
+      "nIscritti":43,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Nuovi esercizi disponibili da oggi, sull'app che potete comodamente cercare sul PlayStore",
+	    "descrizioneVideo":"Primo video per imparare le basi dell'inglese in pochissimo tempo",
+            "dataPost":{"$date":"2017-03-16T21:30:46Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2016-12-01T14:22:36Z"},
+      "like":150
+   },
+   {
+      "codCorso":"c05",
+      "descrizione":"Seguendo questo corso imparerai a preparare 14 differenti piatti di origine Giapponese, ovvero: il Ramen, il Sushi, gli Onigiri, la tempura, il Katsucurry, i Takoyaki, i Dorayaki (con Anko di fagioli rossi), i Gyoza, i Mochi, gli Yaki Udon, gli Okonomiyaki, il Melonpan, il Tori no Karaage e infine i Nikuman.",
+      "author":"a03",
+      "categoria":"cucina",
+      "nome":"giapponese",
+      "nIscritti":71,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Il sushi è un insieme di piatti tipici della cucina giapponese a base di riso insieme ad altri ingredienti come pesce, alghe nori, uova o avocado. ",
+	    "descrizioneVideo":"Preparazione del ramen",
+            "dataPost":{"$date":"2013-03-01T10:32:57Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2012-02-01T03:02:10Z"},
+      "like":89
+   },
+   {
+      "codCorso":"c06",
+      "descrizione":"Con il nostro corso otterrai 24 corsi di spagnolo, livello A0 - C2, 7 risorse per l'apprendimento, dettagliate spiegazioni grammaticali, processo di apprendimento strutturato e flessibile, tutor di spagnolo, certificato di spagnolo.",
+      "author":"a01",
+      "categoria":"lingue",
+      "nome":"spagnolo",
+      "nIscritti":39,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Sapevate che lo spagnolo è una lingua appartenente al gruppo delle lingue romanze della famiglia delle lingue indoeuropee?",
+	    "descrizioneVideo":"Prima lezione per imparare le basi dello spagnolo",
+            "dataPost":{"$date":"2005-02-03T10:25:45Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2003-09-02T10:21:54Z"},
+      "like":123
+   },
+   {
+      "codCorso":"c07",
+      "descrizione":"La batteria è uno strumento musicale composto da tamburi, piatti e altri strumenti a percussione disposti in modo tale che possano essere suonati da un solo musicista, detto batterista. Io sono un batterista con esperienza trentennale e propongo lezioni personalizzate su misura per voi.",
+      "author":"a07",
+      "categoria":"musica",
+      "nome":"batteria",
+      "nIscritti":94,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Questa batteria è una delle più rare che potete trovare in circolazione.",
+ 	    "descrizioneVideo":"Cover del famosissimo brano 'Eye of the Tiger'",
+            "dataPost":{"$date":"2003-08-11T14:20:34Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2001-02-12T12:01:14Z"},
+      "like":74
+   },
+   {
+      "codCorso":"c08",
+      "descrizione":"Il judo è la via più efficace per utilizzare la forza fisica e mentale, è uno sport da combattimento e un metodo di difesa personale giapponese formalmente nato in Giappone. Il Judo è in seguito divenuto ufficialmente disciplina olimpica a Tokyo 1964 e ha rappresentato ai Giochi di Atene 2004 il terzo sport più universale con atleti da 98 diversi Paesi.",
+      "author":"a05",
+      "categoria":"sport",
+      "nome":"judo",
+      "nIscritti":46,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Foto scattata durante le olimpiadi di Sydney nel 2000",
+    	    "descrizioneVideo":"Video tratto dal World Judo Tour del 2019",
+            "dataPost":{"$date":"2017-02-11T12:03:40Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2015-03-12T14:23:44Z"},
+      "like":88
+   },
+   {
+      "codCorso":"c09",
+      "descrizione":"Segui il corso, diventi un web developer e trovi lavoro. 6 mesi di corso full time, online e in diretta. PHP è un linguaggio di scripting interpretato, originariamente concepito per la programmazione di pagine web dinamiche.",
+      "author":"a06",
+      "categoria":"informatica",
+      "nome":"php",
+      "nIscritti":53,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Semplice codice scritto in linguaggio PHP.",
+    	    "descrizioneVideo":"Prima lezione sul linguaggio PHP: le basi",
+            "dataPost":{"$date":"2013-02-15T11:03:43Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2012-01-22T11:23:44Z"},
+      "like":16
+   },
+   {
+      "codCorso":"c10",
+      "descrizione":"Uno spazio didattico dove chiunque può imparare a suonare una chitarra attraverso corsi personalizzati per tutte le età e per tutti gli obiettivi.",
+      "author":"a07",
+      "categoria":"musica",
+      "nome":"chitarra",
+      "nIscritti":37,
+      "imgCorso":[
+         {
+            "descrizioneImg":"Chitarre appartenute ai più famosi chitarristi della storia.",
+            "descrizioneVideo":"Esibizione con chitarra classica",
+            "dataPost":{"$date":"2018-06-25T11:02:33Z"}
+         }
+      ],
+      "dataCreazione":{"$date":"2016-01-21T21:23:54Z"},
+      "like":120
+   }
+]
