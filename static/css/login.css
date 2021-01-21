@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background: url("./../imgSocial/login/bg.jpg") no-repeat;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.form{
+    color: #fff;
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-bottom: 120px;
+}
+
+input{
+    margin: 20px 0;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.username, .password{
+    border-bottom: 1px solid #fff;
+    color: white;
+}
+
+.button{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.button:hover{
+    background: #fff;
+    color: #000;
+}
+a{
+    color: white;
+    font-size: 18px;
+}
+p{
+    font-size: 12px;
+}
+
+#lblErrore{
+    position: absolute;
+    top: 18%;
+}

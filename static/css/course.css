@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+
+/*Styling for cards*/
+
+body {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 1700% 1700%;
+  position: relative;
+  animation: change 20s ease-in-out infinite;
+}
+@keyframes change{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+h1 {
+  color: #111;
+  text-align: center;
+  margin-top: 25px;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+  margin-top: 16.3%;
+}
+
+.contenitore {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.contenitore:hover {
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: 0.5s all ease;
+  perspective: 900;
+  z-index: 99;
+}
+
+#card1 {
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  height: 80%;
+  right: 80%;
+}
+
+#card2 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 70%;
+  z-index: 0;
+  height: 80%;
+}
+
+#card3 {
+  left: -100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+}
+
+.story {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  height: 55%;
+  width: 100%;
+  z-index: 30;
+}
+
+#story1{
+  background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);
+}
+#story2 {
+  background: linear-gradient(to bottom, #5b62a2 0%, #7b88d1 40%);
+}
+
+.like{
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  margin-top: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.imgLike{
+  width: 100%;
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+}
+
+h3 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/*********************** BUTTON COURSE***************************/
+.glow-on-hover {
+  width: 160px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+/**********************  END BUTTON COURSE ********************/
+
+/*********************** PROFILE AREA ******************************/
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.profile-card{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color:rgba(0,0,0,0.7);
+  /*background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);*/
+  border-radius:10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  pointer-events:none;
+  opacity:0;
+  transform:translate(-50%,-50%) scale(0.5);
+  transition: opacity 300ms ease-in-out,
+              top 1000ms ease-in-out,
+              transform 1000ms ease-in-out;
+}
+
+.profile-card.show{
+  opacity:1;
+  display: flex;
+  top:50%;
+  transform:translate(-50%,-50%) scale(1);
+  transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+  pointer-events: auto;
+}
+
+.profile{
+  border: 4px;
+  text-align: center;
+  padding: 20px;
+  width: 500px;
+}
+
+.card-header{
+  background-color: #9dc5c3;
+  background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
+  /*background: #2c3a47;*/
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 12px 50px;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  border: 2px solid #48c6ef;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+}
+
+.contact-btn:hover{
+  background-image: linear-gradient(#8d8d95,#8d8d95);
+}
+
+.card-footer{
+  background: #f4f4f4;
+  padding: 60px 10px;
+}
+
+.numbers{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #e66767;
+}
+
+.item span{
+  display: inline-block;
+  color: #2c3a47;
+  font-size: 30px;
+}
+/*********************** END PROFILE AREA **************************/
+
+/********************** NAVBAR **********************************************/
+
+#icons{
+  display: flex;
+  justify-content: center;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+  color: black;
+}
+/************************* END NAVBAR **********************************/

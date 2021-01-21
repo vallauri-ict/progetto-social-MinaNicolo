@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /*min-height: 100vh;*/
+  box-sizing: border-box;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 1700% 1700%;
+  position: relative;
+  animation: change 20s ease-in-out infinite;
+}
+
+@keyframes change{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+/********************** NAVBAR **********************************************/
+
+#closeSearchUser{
+  top:10;
+}
+
+#icons{
+  display: flex;
+  justify-content: center;
+}
+
+/**************************** SEARCH BAR ***************************************/
+
+.small-img{
+  width: 35px;
+}
+
+.search-box{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 40px;
+  background-color: #2f3640;
+}
+
+.search-btn{
+  color: #e84118;
+  float: left;
+  border-radius: 50%;
+}
+
+.search-txt{
+  border:none;
+  background: none;
+  outline: none;
+  float: right;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: 0.4s;
+  width: 240px;
+  color: white;
+}
+
+.spanContainer{
+  z-index:1;
+  position:absolute;
+  background-color:#2f3640;
+  color:white;
+  width:220px;
+  overflow:auto;
+  margin-left:30px;
+  margin-top:5px;
+}
+
+.divUser{
+  width:190px;
+  margin:8px auto;
+  border-radius:40px;
+}
+
+.divUser:hover{
+  background-color: #9c9c9c;
+  cursor:pointer;
+}
+
+.card-header{
+  width: 30em;
+}
+/**************************** END SEARCH BAR ***************************************/
+
+.form-group{
+  position: absolute;
+  top: 60px;
+  left: 40%;
+  right: 35%;
+}
+
+
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+  size: 100%;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+  color: black;
+}
+
+/************************* END NAVBAR **********************************/
+
+/*********************** SIDEBAR **************************************/
+
+.container{
+  margin-left: 0;
+  margin-right: 0;
+}
+nav#sidebar{
+  position: fixed;
+  width: 70px;
+  height: 250px;
+  margin-top: 130px;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
+}
+nav#sidebar li{
+  height: 60px;
+  position:relative;
+}
+nav#sidebar li a{
+  color: white;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  padding-left:25%;
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  transition: all .3s linear;
+}
+nav#sidebar li:nth-child(1) a{
+  background: #f8fc32;
+}
+nav#sidebar li:nth-child(2) a{
+  background: #045080;
+}
+nav#sidebar li:nth-child(3) a{
+  background: #30e13f;
+}
+nav#sidebar li:nth-child(4) a{
+  background: #b228ab;
+}
+nav#sidebar li:nth-child(5) a{
+  background: #141413;
+}
+nav#sidebar li a i{
+  position:absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 27px;
+}
+ul li a span{
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#sidebar a:hover {
+  text-decoration: none;
+  color: white;
+  z-index:1;
+  width: 200px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+}
+ul li:hover a span{
+  padding-left: 30%;
+  display: block;
+}
+
+  
+/*********************** END SIDEBAR ***********************************/
+
+
+
+/*********************** BUTTON GROUP ********************************/
+.border{
+    width: 1px;
+    height: 30px;
+    background: rgb(59, 56, 56);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button-group{
+  margin-left: 30px;
+}
+/*********************** END BUTTON GROUP ********************************/
+
+
+/*********************** COURSES AREA ********************************/
+a{
+  cursor: pointer;
+}
+.project_area{
+    padding: 2rem;
+    margin-left: 160px;
+}
+.project_area .button-group button{
+    background: transparent;
+    border: none;
+    font-family: "Roboto";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.coursesArea{
+  display: grid;
+  padding: 20px;
+  grid-gap: 40px;
+}
+
+.course{
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.18);
+  background-image: linear-gradient(225deg, #f4ffff 0, #ecffff 25%, #e2e9eb 50%, #d7d1cf 75%, #cbbbb4 100%);
+  transition: transform .2s;
+  height: 23em;
+}
+.box{
+  position: relative;
+}
+.imgCourse{
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.details{
+  padding: 20px 10px;
+}
+.details>h4{
+  color: #9b1b1b;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+.details>span{
+  color: #a0a0a0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h4{
+    font-weight: bold;
+}
+
+.course:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+a.linkCourse{
+  text-decoration:none;
+  color:black;
+}
+
+/*********************** END COURSES AREA ********************************/
+
+/*********************** PROFILE AREA ******************************/
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.profile-card{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color:rgba(0,0,0,0.7);
+  /*background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);*/
+  border-radius:10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  pointer-events:none;
+  opacity:0;
+  transform:translate(-50%,-50%) scale(0.5);
+  transition: opacity 300ms ease-in-out,
+              top 1000ms ease-in-out,
+              transform 1000ms ease-in-out;
+}
+
+.profile-card.show{
+  opacity:1;
+  display: flex;
+  top:50%;
+  transform:translate(-50%,-50%) scale(1);
+  transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+  pointer-events: auto;
+}
+
+.profile{
+  border: 4px;
+  text-align: center;
+  padding: 20px;
+  width: 500px;
+}
+
+.card-header{
+  background-color: #9dc5c3;
+  background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
+  /*background: #2c3a47;*/
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 12px 50px;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  border: 2px solid #48c6ef;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+}
+
+.contact-btn:hover{
+  background-image: linear-gradient(#8d8d95,#8d8d95);
+}
+
+.card-footer{
+  background: #f4f4f4;
+  padding: 60px 10px;
+}
+
+.numbers{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #e66767;
+}
+
+.item span{
+  display: inline-block;
+  color: #2c3a47;
+  font-size: 30px;
+}
+/*********************** END PROFILE AREA **************************/
+
+/************************ CHAT AREA ********************************/
+section{
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  padding: 0 0.5rem;
+  position: fixed;
+}
+.submit:hover, #emoji-btn:hover{
+  opacity: 1;
+}
+
+.chat-popup{
+  display: none;
+  position: fixed;
+  bottom:80px;
+  right:40px;
+  height: 275px;
+  width: 300px;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75rem;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+.show{
+  display: flex;
+}
+
+.chat-area{
+  height: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.income-msg{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 8px;
+}
+
+.avatar{
+  width:45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.income-msg .msg{
+  background-color: dodgerblue;
+  width: 200px;
+  color: white;
+  padding:0.5rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  word-wrap: break-word;
+}
+
+.badge{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color:white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:-10px;
+  right: -10px;
+}
+
+.input-area{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#myText{
+  width:100%;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 5px;
+  height: 2.2rem;
+}
+
+#emoji-btn{
+  position: absolute;
+  font-size: 1.2rem;
+  background: transparent;
+  right: 50px;
+  top:2px;
+  opacity:0.5;
+}
+
+.submit{
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.2rem;
+  background-color: rgb(2, 0, 128);
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+#btnCloseChat{
+  border: none;
+}
+
+.out-msg{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.my-msg{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.75rem;
+  padding: 0.5rem;
+  background-color: #ddd;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  word-break: break-all;
+}
+
+.message-data {
+  font-weight: bold;
+}
+.message-from {
+  font-style: italic;
+}	
+
+
+@media (max-width:500px){
+
+  .chat-popup{
+      right:10%;
+      width: 200vw;
+  }
+}
+/************************ END CHAT AREA ****************************/
+
+/********************** CSS PAGE CORSI ************************/
+
+
+
+/********************** END PAGE CORSI ************************/

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Social Network</title>
+	<link rel="icon" href="./image.png" type="image/png" />
+	<meta name="viewport" content="maximum-scale=1">
+		
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link type="text/css" rel="stylesheet" href="./../css/index.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+	<script type="application/javascript" src="./socket.io.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.1/socket.io.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/libreria.js"></script>
+	<script src="./js/index.js"></script>
+</head>
+
+<body>
+	<!--------------------------------- START HEADER AREA ------------------------------------------->
+	<header>
+		<nav id="icons">
+			<ul class="nav_links">
+				<li><a href="./../index.html" class="nav-link nav-icons"><svg aria-label="Home" class="_8-yf5 "
+							fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+							<path
+								d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z">
+							</path>
+						</svg></a></li>
+				<li><a id="user" href="#" class="nav-link nav-icons"><i class="fas fa-user fa-lg icons"></i></a></li>
+				<li><a href="#" id="searchButton" class="nav-link nav-icons"><i class="fas fa-search"></i></a></li>
+				<div class="form-group">
+					<div class="input-group-prepend">
+						<span id="closeSearchUser" style="cursor: pointer;"><i class="fas fa-times-circle"></i></span>
+						<span class="search-box"><input class="search-txt" onfocus="this.value=''" autocomplete="off"
+								type="text" class="form-control" id="txtSearchUser" placeholder="Username"
+								aria-label="Username" aria-describedby="basic-addon1"></span>
+					</div>
+					<span id="txtVoci"></span>
+				</div>
+				<li><a id="btnLogout" href="#" class="nav-link nav-icons"><i class="fas fa-sign-out-alt"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!----------------------------------------- END HEADER AREA ------------------------------------------------------------->
+	<nav id="sidebar">
+		<ul>
+			<li><a href="#"><i class="fas fa-utensils"></i><span>Cucina</span></a></li>
+			<li><a href="#"><i class="fas fa-desktop"></i><span>Informatica</span></a></li>
+			<li><a href="#"><i class="fas fa-dumbbell"></i><span>Sport</span></a></li>
+			<li><a href="#"><i class="fas fa-book"></i><span>Lingue</span></a></li>
+			<li><a href="#"><i class="fas fa-music"></i></i><span>Musica</span></a></li>
+		</ul>
+	</nav>
+
+	<!------------------------------------------ COURSES AREA --------------------------------------------------------------->
+
+	<div class="project_area">
+		<div class="container">
+
+			<hr align="left" size="1" width="100%" color="red" noshade>
+			<div class="button-group">
+
+			</div>
+			<br>
+			<div class="coursesArea">
+
+			</div>
+		</div>
+	</div>
+
+	<!----------------------------------------- END COURSES AREA ------------------------------------------------------------------------->
+
+	<!----------------------------------------- PROFILE AREA ------------------------------------------------------------------------->
+	<div class="profile-card center">
+		<a href="#" class="close"></a>
+		<div class="profile">
+			<!--<div class="card-header">
+				<div class="pic">
+					<img src="./../imgSocial/profile/pic.png" alt="">
+				</div>
+				<div class="name">John Doe</div>
+				<div class="desc">Developer & Designer</div>
+				<a href="#" class="contact-btn">Contact Me</a>
+			</div>
+			<div class="card-footer">
+				<div class="numbers">
+					<div class="item">
+						<span id="sp">120</span>
+						Posts
+					</div>
+					<div class="border"></div>
+					<div class="item">
+						<span>127</span>
+						Following
+					</div>
+					<div class="border"></div>
+					<div class="item">
+					</div>
+				</div>
+			</div>-->
+		</div>
+	</div>
+	<!----------------------------------------- END PROFILE AREA ------------------------------------------------------------------------->
+
+	<!----------------------------------------- CHAT AREA ----------------------------------------------------------------------------->
+	<section>
+		<div class="chat-popup">
+			<div class="chat-area">
+				<!--<div class="income-msg">
+					<img src="./imgSocial/users/u01.jpg" class="avatar" alt="">
+					<span class="msg"> Hi, How can I help you?</span>
+				</div>-->
+			</div>
+
+			<div class="input-area">
+				<input type="text" id="myText" autocomplete="off" onfocus="this.value=''">
+				<!--<button id="emoji-btn"> &#127773;</button>-->
+				<button class="submit" id="btnInviaMessage"> Invia</button>
+				<button type="button" id="btnCloseChat"> <i class="fas fa-times-circle"></i></button>
+			</div>
+		</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+	<!----------------------------------------- END CHAT AREA ----------------------------------------------------------------------------->
+</body>
+
+</html>
